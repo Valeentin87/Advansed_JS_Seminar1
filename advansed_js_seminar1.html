@@ -39,6 +39,18 @@
       classInClass.forEach((element) => {
         console.log(element);
       });
+      // 4. Найти первый попавшийся элемент на странице у которого есть атрибут data-number со значением 50 и вывести его в консоль.
+      let allTags = document.querySelector("body");
+      allTags = allTags.childNodes;
+      allTags.forEach((element) => {
+        let arrKeys = Object.keys(element);
+        if (
+          arrKeys.indexOf("data-number") != -1 &&
+          element[data - number] === 50
+        ) {
+          console.log(element);
+        }
+      });
     </script>
   </body>
 </html>
