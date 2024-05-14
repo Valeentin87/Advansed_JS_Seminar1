@@ -34,6 +34,11 @@
       newA.forEach((element) => {
         element.textContent = "ссылка";
       });
+      // 3. Найти все элементы на странице с классом "card-link", которые лежат в элементе с классом "card-body" и вывести полученную коллекцию в консоль.
+      const classInClass = document.querySelectorAll(".card-body .card-link");
+      classInClass.forEach((element) => {
+        console.log(element);
+      });
     </script>
   </body>
 </html>
