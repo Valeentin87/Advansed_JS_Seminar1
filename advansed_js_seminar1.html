@@ -28,8 +28,12 @@
     <script>
       "use strict";
       //1. Найти по id, используя getElementById, элемент с id равным "super_link" и вывести этот элемент в консоль.
-      console.log(document.getElementById('super_link'));
-
+      console.log(document.getElementById("super_link"));
+      //2. Внутри всех элементов на странице, которые имеют класс "card-link", поменяйте текст внутри элемента на "ссылка".
+      const newA = document.querySelectorAll(".card-link");
+      newA.forEach((element) => {
+        element.textContent = "ссылка";
+      });
     </script>
   </body>
 </html>
